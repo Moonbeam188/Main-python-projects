@@ -1,0 +1,26 @@
+import random
+sign=input("Lets play Rock, Paper, Scissor. What do you choose?")
+comp=random.randint(1,3)
+if comp==1:
+  c="scissors"
+elif comp==2:
+  c="paper"
+else:
+  c="rock"
+print("we chose", c )
+if sign=="rock" and c=="paper":
+  print("I won")
+elif sign=="paper" and c=="scissors":
+    print("I won")
+elif sign=="scissors" and c=="rock":
+    print("I won")
+elif sign==c:
+    print("It's a tie")
+elif sign=="rock" and c=="scissors":
+    print("You won")
+elif sign=="paper" and c=="rock":
+    print("You won")
+elif sign=="scissors" and c=="paper":
+    print("You won")
+else:
+    print("Invalid input")
